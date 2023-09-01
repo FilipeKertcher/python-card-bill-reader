@@ -1,0 +1,7 @@
+boto3==1.26.123
+Flask==2.3.1
+pdf2image==1.16.3
+Pillow==9.5.0
+psycopg2==2.9.6
+python-dotenv==1.0.0
+ultralytics==8.0.89

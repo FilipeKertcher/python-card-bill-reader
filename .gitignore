@@ -1,0 +1,8 @@
+.env
+items-to
+ocr/*
+runs/*
+training-datasets/test/*
+training-datasets/valid/*
+training-datasets/train/*
+results/*

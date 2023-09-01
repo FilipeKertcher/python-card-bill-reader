@@ -1,0 +1,14 @@
+train: /Users/filipekertcher/Desktop/personal-code/python/tables-refactor.v5/train/images
+val: /Users/filipekertcher/Desktop/personal-code/python/tables-refactor.v5/valid/images
+test: /Users/filipekertcher/Desktop/personal-code/python/tables-refactor.v5/test/images
+
+
+nc: 4
+names: ['NextBillTable', 'NextBillTableRow', 'Row', 'Tables']
+
+roboflow:
+  workspace: project
+  project: tables-refactor
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project/tables-refactor/dataset/5

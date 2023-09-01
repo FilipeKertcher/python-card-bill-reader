@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: personal_code
+      POSTGRES_PASSWORD: personal_code
+    ports:
+      - 5469:5432
+    networks:
+      - default
+  app:
+    build: '.'
+    env_file:
+      - .env
+    environment:
+      - DB_PORT=5432
+      - DB_HOST=postgres
+      - YOLO_OUTPUT_FOLDER=/app/results
+      - YOLO_PREDICTION_RESULTS_FOLDER=/app/results/predict/crops
+    volumes:
+      - ./:/app/
+    ports:
+      - '3001:5000'
+volumes:
+ postgres_data:
