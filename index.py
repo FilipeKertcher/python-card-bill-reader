@@ -263,7 +263,7 @@ def convertPDFToJPG():
     convert_from_path(
         './items-to-process/Fatura_Mastercard_100471492916_04-2023.pdf',  
         output_folder='./runs/', 
-        userpw='09999', 
+        userpw='', 
         fmt='jpg',
         output_file="image"
     )
